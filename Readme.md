@@ -7,11 +7,12 @@ source /opt/mod_tables/venv/bin/activate
 pip install flask
 git clone https://github.com/kowenhouston/mod_tables /opt/mod_tables/
 mv /opt/mod_tables/mod_tables/ /opt/mod_tables/web/
-python3 /opt/mod_tables/web/mod_tables.py
+chmod +x /opt/mod_tables/web/start.sh
+python3 /opt/mod_tables/web/start.sh
 ```
 
 Then hit your URL to add your IP:
-* http://<IP>/ip/add
+* http://YOUR_IP:5000/ip/add
 
-Or Hit the following to add a random IP:
-* http://<IP>/ip/add/<IP>/
+Or Hit the following to add a chosen IP:
+* http://YOUR_IP:5000/ip/add/IP_YOU_WANT_TO_ADD/
